@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    background-color: #F0EDE5;
+    overflow: hidden;
+}
+
+.main-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding: 10rem 1.5rem; 
+    gap: 1.5rem;
+}
+
+.main-conteiner .pintura-area {
+    height: 43.2rem;
+}
+
+.main-conteiner .pintura-area .nome-pintura {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.main-conteiner .pintura-area figcaption {
+    transform: translate(2.7rem, -11rem);
+}
+
+@media (max-width: 1416px) {
+    body {
+        overflow: auto;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .main-conteiner {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-conteiner .pintura-area figcaption {
+        transform: translate(2.7rem, -8.3rem);
+    }
+}
+
+
+
+
+
+
