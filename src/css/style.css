@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;;
+    font-size: 62.5%;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
     font-size: 1.7rem;
     font-weight: 300;
     background-color: #F0EDE5;
-    overflow: hidden;
 }
 
 .main-conteiner {
@@ -20,12 +19,13 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-wrap: wrap;
-    padding: 10rem 1.5rem; 
+    padding: 10rem 1.5rem;
     gap: 1.5rem;
 }
 
 .main-conteiner .pintura-area {
     height: 43.2rem;
+    position: relative;
 }
 
 .main-conteiner .pintura-area .nome-pintura {
@@ -36,33 +36,7 @@ body {
 }
 
 .main-conteiner .pintura-area figcaption {
-    transform: translate(2.7rem, -11rem);
+    position: absolute;
+    bottom: 0;
+    margin: 15px;
 }
-
-@media (max-width: 1416px) {
-    body {
-        overflow: auto;
-    }
-
-    .main-conteiner {
-        max-width: 90rem;
-    }
-}
-
-
-@media (max-width: 720px) {
-    .main-conteiner {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .main-conteiner .pintura-area figcaption {
-        transform: translate(2.7rem, -8.3rem);
-    }
-}
-
-
-
-
-
-
